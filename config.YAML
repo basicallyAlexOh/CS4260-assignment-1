@@ -1,0 +1,6 @@
+
+locationFile: './data/locData.csv'
+edgeFile: './data/edgeData.csv'
+startLoc: 'NashvilleTN'
+goal: 'WashingtonDC'
+resultFile: './output/out1.csv'
