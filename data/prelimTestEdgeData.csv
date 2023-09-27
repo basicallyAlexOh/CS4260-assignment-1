@@ -1,0 +1,13 @@
+edgeLabel,locationA,locationB,actualDistance,Contributer,Notes
+Nashville_tofrom_Jackson_on_I40,NashvilleTN,JacksonTN,129,Id0,Id0 = the instructional team
+Jackson_tofrom_Memphis_on_I40,JacksonTN,MemphisTN,88,Id0,
+LittleRock_tofrom_Memphis_on_I40,MemphisTN,LittleRockAR,137,Id30,
+NewBoston_tofrom_LittleRock_on_I30,LittleRockAR,NewBostonTX,164,Id30,
+Dallas_tofrom_NewBoston_on_I30,NewBostonTX,DallasTX,156,Id30,
+DallasToAustin,DallasTX,AustinTX,197,Id9,
+AustinToArtesiaWells,AustinTX,ArtesiaWellsTX,179,Id9,
+ArtesiaWellsToMonterrey,ArtesiaWellsTX,MonterreyNLMexico,194,Id9,
+Chattanooga_tofrom_Atlanta_on_I75S,ChattanoogaTN,AtlantaGA,118,Id24,
+Atlanta_to_Augusta,AtlantaGA,AugustaGA,145,Id4,
+Charlotte_to_Augusta,CharlotteNC,AugustaGA,164,Id4,
+Carlotte_to_Raleigh,CharlotteNC,RaleighNC,166,Id4,

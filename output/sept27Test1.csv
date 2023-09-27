@@ -1,0 +1,24 @@
+Size of Frontier: 0
+Min Cost: 252.0
+Average Cost: 321.6666666666667
+Max Cost: 408.0
+Solution ID of Min Cost: 0
+Visited Nodes: NashvilleTN MemphisTN JacksonTN KnoxvilleTN ChattanoogaTN MetropolisIL FranklinTN StLouisMO ColumbiaMO KansasCityMO LittleRockAR NewBostonTX DallasTX AustinTX ArtesiaWellsTX MonterreyNLMexico AtlantaGA HuntsvilleAL AthensGA AugustaGA CharlotteNC RaleighNC LouisvilleKY BowlingGreenKY IndianapolisIN TerreHauteIN ChicagoIL SpringfieldIL CincinnatiOH ColumbusOH ClevelandOH LexingtonKY WatertownTN GatlinburgTN PigeonForgeTN GadsenAL TuscaloosaAL WarriorAL ColumbusMS EvansvilleIN SpringfieldTN BurkesvilleKY KennesawGA MariettaGA DuluthGA LexingtonTN SpartaTN OakRidgeTN MontroseGA SavannahGA JacksonvilleFL WestPalmBeachFL MiamiFL FortMyersFL TampaFL GainesvilleFL TallahasseeFL MaconGA 
+
+Solution #3 : NashvilleTN 164
+NashvilleTN ChattanoogaTN ChattanoogaTN_tofrom_NashvilleTN 134.0 134.0 64.25353270339986
+ChattanoogaTN AtlantaGA Chattanooga_tofrom_Atlanta_on_I75S 118.0 252.0 0.0
+0:00:00.000830
+
+Solution #4 : NashvilleTN 164
+NashvilleTN HuntsvilleAL Nashville_tofrom_Huntsville_on_I65S 115.0 115.0 153.05726331943904
+HuntsvilleAL GadsenAL HuntsvilleAL_tofrom_GadsenAL 72.0 187.0 112.14586185282546
+GadsenAL AtlantaGA GadsenAL_tofrom_AtlantaGA 118.0 305.0 0.0
+0:00:00.002715
+
+Solution #5 : NashvilleTN 164
+NashvilleTN ChattanoogaTN ChattanoogaTN_tofrom_NashvilleTN 134.0 134.0 64.25353270339986
+ChattanoogaTN KennesawGA ChattanoogaTN_tofrom_KennesawGA 94.0 228.0 15.925417527391064
+KennesawGA AthensGA KennesawGA_tofrom_AthensGA 107.0 335.0 69.26730956223447
+AthensGA AtlantaGA Atlanta_tofrom_Athens_on_I85N 73.0 408.0 0.0
+0:00:00.008044

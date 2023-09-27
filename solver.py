@@ -1,12 +1,18 @@
+import copy
 
 from dataloader import *
-from graph import *
+from graph import Graph
+from path import Path
 from queue import PriorityQueue
 from timer import Timer
 import sys
 
 class AStarSolver:
-    def __init__(self, locFilePath: str, edgeFilePath: str, startLoc: str, goal: str):
+
+    # static variable to keep track of solution number
+    solNumber = 0
+
+    def __init__(self, locFilePath: str, edgeFilePath: str, startLoc: str, goal: str, resultFilePath: str):
         dataloader = Dataloader(locFilePath, edgeFilePath)
         self.__graph = Graph(dataloader, goal=goal)
         self.__start = None
@@ -20,6 +26,7 @@ class AStarSolver:
         self.__solutions = []
         self.__frontier = PriorityQueue()
         self.__timer = Timer()
+        self.__resultFile = open(resultFilePath, "w+")
 
 
     def __solutionSummary(self):
@@ -51,13 +58,24 @@ class AStarSolver:
         return ret
 
     def __printSummary(self, output=sys.stdout):
-        print("Size of Frontier: " + self.__frontier.qsize(), file=output)
+        print("Size of Frontier: " + str(self.__frontier.qsize()), file=output)
         (minCost, maxCost, avgCost) = self.__solutionSummary()
-        print("Min Cost: " + minCost + "\nAverage Cost: " + avgCost + "\nMax Cost: " + maxCost, file=output)
-        print("Solution ID of Min Cost: " + self.__findMinSolution(), file=output)
+        print("Min Cost: " + str(minCost) + "\nAverage Cost: " + str(avgCost) + "\nMax Cost: " + str(maxCost), file=output)
+        print("Solution ID of Min Cost: " + str(self.__findMinSolution()), file=output)
         print("Visited Nodes: " + self.__visitedNodes(), file=output)
-        print("Times of Solutions: " + (str(path.time) + "; " for path in self.__solutions), file=output)
 
+        for path in self.__solutions:
+            output.write("\n")
+            self.__pathSummary(p=path, output=output)
+            print(str(path.time), file=output)
+
+    def __pathSummary(self, p : Path, output=sys.stdout):
+        print("Solution #%d : %s %d" % (self.solNumber, str(p.path[0]), p.path[0].h),file=output)
+        self.solNumber += 1
+        curG = 0
+        for edge in p.edges:
+            curG += edge.weight
+            print(str(edge) + " " + str(curG) + " " + str(edge.end.h), file=output)
 
 
     def __promptContinue(self):
@@ -65,12 +83,13 @@ class AStarSolver:
         if response.lower() == "yes":
             return True
         elif response.lower() == "no":
-            self.__printSummary()
             return False
         print("Invalid response... please try again\n")
         return self.__promptContinue()
 
     def solve(self):
+        continueSearch = True
+
         adj = self.__graph.getAdjList()
 
         self.__timer.start()
@@ -80,6 +99,8 @@ class AStarSolver:
             (f, curPath) = self.__frontier.get()
             curNode = curPath.getLastNode()
 
+            self.__discovered[curNode] = True
+
             if curNode == self.__graph.getGoal():
                 self.__timer.pause()
                 curPath.time = self.__timer.get()
@@ -87,20 +108,29 @@ class AStarSolver:
                 print("Solution Found!")
                 continueSearch = self.__promptContinue()
                 if not continueSearch:
+                    self.__printSummary()
+                    self.__printSummary(output=self.__resultFile)
                     break
-                self.__timer.start()
+                self.__timer.resume()
 
 
             for edge in adj[curNode]:
                 (nextNode, w) = (edge.end, edge.weight)
                 if nextNode not in curPath:
-                    newPath = curPath.addEdge(edge)
+                    newPath = copy.deepcopy(curPath)
+                    newPath.addEdge(edge)
                     newf = curPath.weight + nextNode.h
                     self.__frontier.put((newf, newPath))
 
-        self.__timer.pause()
 
         if len(self.__solutions) == 0:
             print("no solutions found...")
+
+        if continueSearch:
+            print("Search has terminated... Printing Results:")
+            self.__printSummary()
+            self.__printSummary(output=self.__resultFile)
+
+
 
         return self.__solutions

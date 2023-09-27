@@ -1,7 +1,8 @@
 # Dataloader class
 
 import csv
-from graph import *
+from node import Node
+from edge import Edge
 
 class Dataloader:
     def __init__(self, locFile: str, edgeFile: str):
@@ -21,13 +22,26 @@ class Dataloader:
         with self.__locFile as locCSV:
             reader = csv.reader(locCSV, delimiter=',')
             for row in reader:
-                self.nodeList.append(Node(row[0], row[1], row[2]))
-                self.nodeDict.update({row[0] : Node(row[0], row[1], row[2])})
+                try:
+                    lat = float(row[1])
+                    lon = float(row[2])
+                    self.nodeList.append(Node(row[0], lat, lon))
+                    self.nodeDict.update({row[0]: Node(row[0], lat, lon)})
+                except:
+                    print("Not a valid location")
+                    print(row)
 
         with self.__edgeFile as edgeCSV:
             reader = csv.reader(edgeCSV, delimiter=',')
             for row in reader:
-                self.edgeList.append(Edge(self.nodeDict(row[1]), self.nodeDict(row[2]), float(row[3])))
+                try:
+                    dist = float(row[3])
+                    self.edgeList.append(Edge(row[0], self.nodeDict[row[1]], self.nodeDict[row[2]], dist))
+                except:
+                    print("Not a valid location")
+                    print(row)
+
+
 
 
 

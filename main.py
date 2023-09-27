@@ -2,7 +2,7 @@ import yaml
 from solver import AStarSolver
 
 def RoadTrip(startLoc, goalLoc, LocFile, EdgeFile, resultFile):
-    solver = AStarSolver(locFilePath=LocFile, edgeFilePath=EdgeFile, startLoc=startLoc, goal=goalLoc)
+    solver = AStarSolver(locFilePath=LocFile, edgeFilePath=EdgeFile, startLoc=startLoc, goal=goalLoc, resultFilePath=resultFile)
     solver.solve()
 
 

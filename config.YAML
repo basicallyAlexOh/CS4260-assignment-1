@@ -1,6 +1,6 @@
 
-locationFile: './data/locData.csv'
-edgeFile: './data/edgeData.csv'
+locationFile: './data/sept27TestLocs.csv'
+edgeFile: './data/sept27TestEdges.csv'
 startLoc: 'NashvilleTN'
-goal: 'WashingtonDC'
-resultFile: './output/out1.csv'
+goal: 'AtlantaGA'
+resultFile: './output/sept27Test1.csv'
