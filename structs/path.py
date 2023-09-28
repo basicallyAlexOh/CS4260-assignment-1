@@ -1,5 +1,5 @@
-from node import Node
-from edge import Edge
+from structs.node import Node
+from structs.edge import Edge
 
 class Path:
     def __init__(self, startNode: Node):

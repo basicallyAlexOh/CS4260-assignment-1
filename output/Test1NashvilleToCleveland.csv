@@ -1,0 +1,124 @@
+Size of Frontier: 0
+Min Cost: 533.0
+Average Cost: 762.4615384615385
+Max Cost: 966.0
+Solution ID of Min Cost: 0
+Visited Nodes: NashvilleTN MemphisTN JacksonTN KnoxvilleTN ChattanoogaTN MetropolisIL FranklinTN StLouisMO ColumbiaMO KansasCityMO LittleRockAR NewBostonTX DallasTX AustinTX ArtesiaWellsTX MonterreyNLMexico AtlantaGA HuntsvilleAL AthensGA AugustaGA CharlotteNC RaleighNC LouisvilleKY BowlingGreenKY IndianapolisIN TerreHauteIN ChicagoIL SpringfieldIL CincinnatiOH ColumbusOH ClevelandOH LexingtonKY WatertownTN GatlinburgTN PigeonForgeTN GadsenAL TuscaloosaAL WarriorAL ColumbusMS EvansvilleIN SpringfieldTN BurkesvilleKY KennesawGA MariettaGA DuluthGA LexingtonTN SpartaTN AlbanyKY OakRidgeTN MontroseGA SavannahGA JacksonvilleFL WestPalmBeachFL MiamiFL FortMyersFL TampaFL GainesvilleFL TallahasseeFL MaconGA 
+
+Solution #0 : NashvilleTN 351
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 66.0 338.6846254292186
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 183.0 321.0217572476091
+LouisvilleKY CincinnatiOH Cincinnati_tofrom_Lousville 100.0 283.0 196.48147952876462
+CincinnatiOH ColumbusOH Cincinnati_tofrom_Columbus 107.0 390.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 533.0 0.0
+0:00:00.003277
+
+Solution #1 : NashvilleTN 351
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 66.0 338.6846254292186
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 183.0 321.0217572476091
+LouisvilleKY LexingtonKY Louisville_tofrom_Lexington 79.0 262.0 195.84165553647065
+LexingtonKY CincinnatiOH Cincinnati_tofrom_Lexington 83.0 345.0 196.48147952876462
+CincinnatiOH ColumbusOH Cincinnati_tofrom_Columbus 107.0 452.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 595.0 0.0
+0:00:00.009059
+
+Solution #2 : NashvilleTN 351
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 66.0 338.6846254292186
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 183.0 321.0217572476091
+LouisvilleKY IndianapolisIN Indianapolis_tofrom_Louisville 114.0 297.0 329.179042702301
+IndianapolisIN ColumbusOH Indianapolis_tofrom_Columbus 176.0 473.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 616.0 0.0
+0:00:00.013966
+
+Solution #3 : NashvilleTN 351
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 66.0 338.6846254292186
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 183.0 321.0217572476091
+LouisvilleKY IndianapolisIN Indianapolis_tofrom_Louisville 114.0 297.0 329.179042702301
+IndianapolisIN CincinnatiOH Cincinnati_tofrom_Indianapolis 112.0 409.0 196.48147952876462
+CincinnatiOH ColumbusOH Cincinnati_tofrom_Columbus 107.0 516.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 659.0 0.0
+0:00:00.016476
+
+Solution #4 : NashvilleTN 351
+NashvilleTN KnoxvilleTN Nashville_tofrom_Knoxville 180.0 180.0 160.62589975020487
+KnoxvilleTN LexingtonKY Knoxville_tofrom_Lexington 170.0 350.0 195.84165553647065
+LexingtonKY CincinnatiOH Cincinnati_tofrom_Lexington 83.0 433.0 196.48147952876462
+CincinnatiOH ColumbusOH Cincinnati_tofrom_Columbus 107.0 540.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 683.0 0.0
+0:00:00.024240
+
+Solution #5 : NashvilleTN 351
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 66.0 338.6846254292186
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 183.0 321.0217572476091
+LouisvilleKY CincinnatiOH Cincinnati_tofrom_Lousville 100.0 283.0 196.48147952876462
+CincinnatiOH IndianapolisIN Cincinnati_tofrom_Indianapolis 112.0 395.0 329.179042702301
+IndianapolisIN ColumbusOH Indianapolis_tofrom_Columbus 176.0 571.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 714.0 0.0
+0:00:00.032402
+
+Solution #6 : NashvilleTN 351
+NashvilleTN KnoxvilleTN Nashville_tofrom_Knoxville 180.0 180.0 160.62589975020487
+KnoxvilleTN LexingtonKY Knoxville_tofrom_Lexington 170.0 350.0 195.84165553647065
+LexingtonKY LouisvilleKY Louisville_tofrom_Lexington 79.0 429.0 321.0217572476091
+LouisvilleKY CincinnatiOH Cincinnati_tofrom_Lousville 100.0 529.0 196.48147952876462
+CincinnatiOH ColumbusOH Cincinnati_tofrom_Columbus 107.0 636.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 779.0 0.0
+0:00:00.035885
+
+Solution #7 : NashvilleTN 351
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 66.0 338.6846254292186
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 183.0 321.0217572476091
+LouisvilleKY LexingtonKY Louisville_tofrom_Lexington 79.0 262.0 195.84165553647065
+LexingtonKY CincinnatiOH Cincinnati_tofrom_Lexington 83.0 345.0 196.48147952876462
+CincinnatiOH IndianapolisIN Cincinnati_tofrom_Indianapolis 112.0 457.0 329.179042702301
+IndianapolisIN ColumbusOH Indianapolis_tofrom_Columbus 176.0 633.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 776.0 0.0
+0:00:00.037653
+
+Solution #8 : NashvilleTN 351
+NashvilleTN KnoxvilleTN Nashville_tofrom_Knoxville 180.0 180.0 160.62589975020487
+KnoxvilleTN LexingtonKY Knoxville_tofrom_Lexington 170.0 350.0 195.84165553647065
+LexingtonKY LouisvilleKY Louisville_tofrom_Lexington 79.0 429.0 321.0217572476091
+LouisvilleKY IndianapolisIN Indianapolis_tofrom_Louisville 114.0 543.0 329.179042702301
+IndianapolisIN ColumbusOH Indianapolis_tofrom_Columbus 176.0 719.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 862.0 0.0
+0:00:00.051409
+
+Solution #9 : NashvilleTN 351
+NashvilleTN KnoxvilleTN Nashville_tofrom_Knoxville 180.0 180.0 160.62589975020487
+KnoxvilleTN LexingtonKY Knoxville_tofrom_Lexington 170.0 350.0 195.84165553647065
+LexingtonKY LouisvilleKY Louisville_tofrom_Lexington 79.0 429.0 321.0217572476091
+LouisvilleKY IndianapolisIN Indianapolis_tofrom_Louisville 114.0 543.0 329.179042702301
+IndianapolisIN CincinnatiOH Cincinnati_tofrom_Indianapolis 112.0 655.0 196.48147952876462
+CincinnatiOH ColumbusOH Cincinnati_tofrom_Columbus 107.0 762.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 905.0 0.0
+0:00:00.053058
+
+Solution #10 : NashvilleTN 351
+NashvilleTN KnoxvilleTN Nashville_tofrom_Knoxville 180.0 180.0 160.62589975020487
+KnoxvilleTN LexingtonKY Knoxville_tofrom_Lexington 170.0 350.0 195.84165553647065
+LexingtonKY CincinnatiOH Cincinnati_tofrom_Lexington 83.0 433.0 196.48147952876462
+CincinnatiOH IndianapolisIN Cincinnati_tofrom_Indianapolis 112.0 545.0 329.179042702301
+IndianapolisIN ColumbusOH Indianapolis_tofrom_Columbus 176.0 721.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 864.0 0.0
+0:00:00.054501
+
+Solution #11 : NashvilleTN 351
+NashvilleTN KnoxvilleTN Nashville_tofrom_Knoxville 180.0 180.0 160.62589975020487
+KnoxvilleTN LexingtonKY Knoxville_tofrom_Lexington 170.0 350.0 195.84165553647065
+LexingtonKY LouisvilleKY Louisville_tofrom_Lexington 79.0 429.0 321.0217572476091
+LouisvilleKY CincinnatiOH Cincinnati_tofrom_Lousville 100.0 529.0 196.48147952876462
+CincinnatiOH IndianapolisIN Cincinnati_tofrom_Indianapolis 112.0 641.0 329.179042702301
+IndianapolisIN ColumbusOH Indianapolis_tofrom_Columbus 176.0 817.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 960.0 0.0
+0:00:00.063814
+
+Solution #12 : NashvilleTN 351
+NashvilleTN KnoxvilleTN Nashville_tofrom_Knoxville 180.0 180.0 160.62589975020487
+KnoxvilleTN LexingtonKY Knoxville_tofrom_Lexington 170.0 350.0 195.84165553647065
+LexingtonKY CincinnatiOH Cincinnati_tofrom_Lexington 83.0 433.0 196.48147952876462
+CincinnatiOH LouisvilleKY Cincinnati_tofrom_Lousville 100.0 533.0 321.0217572476091
+LouisvilleKY IndianapolisIN Indianapolis_tofrom_Louisville 114.0 647.0 329.179042702301
+IndianapolisIN ColumbusOH Indianapolis_tofrom_Columbus 176.0 823.0 91.62391413590842
+ColumbusOH ClevelandOH Columbus_tofrom_Cleveland 143.0 966.0 0.0
+0:00:00.065890

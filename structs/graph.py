@@ -1,10 +1,10 @@
 
 from collections import defaultdict
 from math import sin, cos, asin, sqrt, radians
-from node import Node
-from edge import Edge
+from structs.node import Node
+from structs.edge import Edge
 
-from dataloader import Dataloader
+from utils.dataloader import Dataloader
 
 
 class Graph:
@@ -71,7 +71,3 @@ class Graph:
 
         # calculate the result
         return (c * r)
-
-
-
-

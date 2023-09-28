@@ -1,4 +1,4 @@
-from node import Node
+from structs.node import Node
 class Edge:
     def __init__(self, label: str, start: Node, end: Node, weight: int):
         self.start = start

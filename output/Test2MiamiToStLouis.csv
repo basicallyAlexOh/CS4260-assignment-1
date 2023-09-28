@@ -1,0 +1,128 @@
+Size of Frontier: 113
+Min Cost: 1628.3
+Average Cost: 1742.7285714285713
+Max Cost: 1811.3
+Solution ID of Min Cost: 0
+Visited Nodes: NashvilleTN MemphisTN JacksonTN KnoxvilleTN ChattanoogaTN MetropolisIL FranklinTN StLouisMO LittleRockAR NewBostonTX AtlantaGA HuntsvilleAL AthensGA AugustaGA CharlotteNC LouisvilleKY BowlingGreenKY IndianapolisIN TerreHauteIN ChicagoIL SpringfieldIL CincinnatiOH LexingtonKY WatertownTN GatlinburgTN PigeonForgeTN GadsenAL TuscaloosaAL WarriorAL ColumbusMS EvansvilleIN SpringfieldTN BurkesvilleKY KennesawGA MariettaGA DuluthGA LexingtonTN SpartaTN AlbanyKY OakRidgeTN MontroseGA SavannahGA JacksonvilleFL WestPalmBeachFL MiamiFL FortMyersFL TampaFL GainesvilleFL TallahasseeFL MaconGA 
+
+Solution #0 : MiamiFL 690
+MiamiFL FortMyersFL Miami_tofrom_FortMyers_on_I75N 157.0 157.0 574.6533888168691
+FortMyersFL TampaFL FortMyers_tofrom_Tampa_on_I75N 127.0 284.0 534.6478650070464
+TampaFL GainesvilleFL Tampa_tofrom_Gainesville_on_I75N 130.0 414.0 543.5391738002928
+GainesvilleFL TallahasseeFL Gainesville_tofrom_Tallahassee_on_I75N 150.0 564.0 410.4146681714538
+TallahasseeFL MaconGA Tallahassee_tofrom_Macon_on_I75N 185.0 749.0 453.19309987752024
+MaconGA AtlantaGA Macon_tofrom_Atlanta_on_I75N 83.3 832.3 401.31872946028267
+AtlantaGA ChattanoogaTN Chattanooga_tofrom_Atlanta_on_I75S 118.0 950.3 337.5846448281138
+ChattanoogaTN NashvilleTN ChattanoogaTN_tofrom_NashvilleTN 134.0 1084.3 236.9099078956448
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 1150.3 249.56545084346953
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 1267.3 266.7420354335184
+LouisvilleKY IndianapolisIN Indianapolis_tofrom_Louisville 114.0 1381.3 258.01936802040194
+IndianapolisIN TerreHauteIN Indianapolis_tofrom_TerreHaute 77.0 1458.3 192.50357871420258
+TerreHauteIN StLouisMO StLouis_tofrom_TerreHaute 170.0 1628.3 0.0
+0:00:00.048704
+
+Solution #1 : MiamiFL 690
+MiamiFL FortMyersFL Miami_tofrom_FortMyers_on_I75N 157.0 157.0 574.6533888168691
+FortMyersFL TampaFL FortMyers_tofrom_Tampa_on_I75N 127.0 284.0 534.6478650070464
+TampaFL GainesvilleFL Tampa_tofrom_Gainesville_on_I75N 130.0 414.0 543.5391738002928
+GainesvilleFL TallahasseeFL Gainesville_tofrom_Tallahassee_on_I75N 150.0 564.0 410.4146681714538
+TallahasseeFL MaconGA Tallahassee_tofrom_Macon_on_I75N 185.0 749.0 453.19309987752024
+MaconGA AtlantaGA Macon_tofrom_Atlanta_on_I75N 83.3 832.3 401.31872946028267
+AtlantaGA GadsenAL GadsenAL_tofrom_AtlantaGA 118.0 950.3 289.1878967262547
+GadsenAL HuntsvilleAL HuntsvilleAL_tofrom_GadsenAL 72.0 1022.3 248.36715766096944
+HuntsvilleAL NashvilleTN Nashville_tofrom_Huntsville_on_I65S 115.0 1137.3 236.9099078956448
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 1203.3 249.56545084346953
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 1320.3 266.7420354335184
+LouisvilleKY IndianapolisIN Indianapolis_tofrom_Louisville 114.0 1434.3 258.01936802040194
+IndianapolisIN TerreHauteIN Indianapolis_tofrom_TerreHaute 77.0 1511.3 192.50357871420258
+TerreHauteIN StLouisMO StLouis_tofrom_TerreHaute 170.0 1681.3 0.0
+0:00:00.066674
+
+Solution #2 : MiamiFL 690
+MiamiFL FortMyersFL Miami_tofrom_FortMyers_on_I75N 157.0 157.0 574.6533888168691
+FortMyersFL TampaFL FortMyers_tofrom_Tampa_on_I75N 127.0 284.0 534.6478650070464
+TampaFL GainesvilleFL Tampa_tofrom_Gainesville_on_I75N 130.0 414.0 543.5391738002928
+GainesvilleFL TallahasseeFL Gainesville_tofrom_Tallahassee_on_I75N 150.0 564.0 410.4146681714538
+TallahasseeFL MaconGA Tallahassee_tofrom_Macon_on_I75N 185.0 749.0 453.19309987752024
+MaconGA AtlantaGA Macon_tofrom_Atlanta_on_I75N 83.3 832.3 401.31872946028267
+AtlantaGA ChattanoogaTN Chattanooga_tofrom_Atlanta_on_I75S 118.0 950.3 337.5846448281138
+ChattanoogaTN NashvilleTN ChattanoogaTN_tofrom_NashvilleTN 134.0 1084.3 236.9099078956448
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 1150.3 249.56545084346953
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 1267.3 266.7420354335184
+LouisvilleKY CincinnatiOH Cincinnati_tofrom_Lousville 100.0 1367.3 391.49287203957783
+CincinnatiOH IndianapolisIN Cincinnati_tofrom_Indianapolis 112.0 1479.3 258.01936802040194
+IndianapolisIN TerreHauteIN Indianapolis_tofrom_TerreHaute 77.0 1556.3 192.50357871420258
+TerreHauteIN StLouisMO StLouis_tofrom_TerreHaute 170.0 1726.3 0.0
+0:00:00.086225
+
+Solution #3 : MiamiFL 690
+MiamiFL FortMyersFL Miami_tofrom_FortMyers_on_I75N 157.0 157.0 574.6533888168691
+FortMyersFL TampaFL FortMyers_tofrom_Tampa_on_I75N 127.0 284.0 534.6478650070464
+TampaFL GainesvilleFL Tampa_tofrom_Gainesville_on_I75N 130.0 414.0 543.5391738002928
+GainesvilleFL TallahasseeFL Gainesville_tofrom_Tallahassee_on_I75N 150.0 564.0 410.4146681714538
+TallahasseeFL MaconGA Tallahassee_tofrom_Macon_on_I75N 185.0 749.0 453.19309987752024
+MaconGA AtlantaGA Macon_tofrom_Atlanta_on_I75N 83.3 832.3 401.31872946028267
+AtlantaGA GadsenAL GadsenAL_tofrom_AtlantaGA 118.0 950.3 289.1878967262547
+GadsenAL HuntsvilleAL HuntsvilleAL_tofrom_GadsenAL 72.0 1022.3 248.36715766096944
+HuntsvilleAL NashvilleTN Nashville_tofrom_Huntsville_on_I65S 115.0 1137.3 236.9099078956448
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 1203.3 249.56545084346953
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 1320.3 266.7420354335184
+LouisvilleKY CincinnatiOH Cincinnati_tofrom_Lousville 100.0 1420.3 391.49287203957783
+CincinnatiOH IndianapolisIN Cincinnati_tofrom_Indianapolis 112.0 1532.3 258.01936802040194
+IndianapolisIN TerreHauteIN Indianapolis_tofrom_TerreHaute 77.0 1609.3 192.50357871420258
+TerreHauteIN StLouisMO StLouis_tofrom_TerreHaute 170.0 1779.3 0.0
+0:00:00.134673
+
+Solution #4 : MiamiFL 690
+MiamiFL FortMyersFL Miami_tofrom_FortMyers_on_I75N 157.0 157.0 574.6533888168691
+FortMyersFL TampaFL FortMyers_tofrom_Tampa_on_I75N 127.0 284.0 534.6478650070464
+TampaFL GainesvilleFL Tampa_tofrom_Gainesville_on_I75N 130.0 414.0 543.5391738002928
+GainesvilleFL TallahasseeFL Gainesville_tofrom_Tallahassee_on_I75N 150.0 564.0 410.4146681714538
+TallahasseeFL MaconGA Tallahassee_tofrom_Macon_on_I75N 185.0 749.0 453.19309987752024
+MaconGA AtlantaGA Macon_tofrom_Atlanta_on_I75N 83.3 832.3 401.31872946028267
+AtlantaGA AthensGA Atlanta_tofrom_Athens_on_I85N 73.0 905.3 470.57465107049063
+AthensGA KennesawGA KennesawGA_tofrom_AthensGA 107.0 1012.3 385.4987973931875
+KennesawGA ChattanoogaTN ChattanoogaTN_tofrom_KennesawGA 94.0 1106.3 337.5846448281138
+ChattanoogaTN NashvilleTN ChattanoogaTN_tofrom_NashvilleTN 134.0 1240.3 236.9099078956448
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 1306.3 249.56545084346953
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 1423.3 266.7420354335184
+LouisvilleKY IndianapolisIN Indianapolis_tofrom_Louisville 114.0 1537.3 258.01936802040194
+IndianapolisIN TerreHauteIN Indianapolis_tofrom_TerreHaute 77.0 1614.3 192.50357871420258
+TerreHauteIN StLouisMO StLouis_tofrom_TerreHaute 170.0 1784.3 0.0
+0:00:00.144396
+
+Solution #5 : MiamiFL 690
+MiamiFL FortMyersFL Miami_tofrom_FortMyers_on_I75N 157.0 157.0 574.6533888168691
+FortMyersFL TampaFL FortMyers_tofrom_Tampa_on_I75N 127.0 284.0 534.6478650070464
+TampaFL GainesvilleFL Tampa_tofrom_Gainesville_on_I75N 130.0 414.0 543.5391738002928
+GainesvilleFL TallahasseeFL Gainesville_tofrom_Tallahassee_on_I75N 150.0 564.0 410.4146681714538
+TallahasseeFL MaconGA Tallahassee_tofrom_Macon_on_I75N 185.0 749.0 453.19309987752024
+MaconGA AtlantaGA Macon_tofrom_Atlanta_on_I75N 83.3 832.3 401.31872946028267
+AtlantaGA ChattanoogaTN Chattanooga_tofrom_Atlanta_on_I75S 118.0 950.3 337.5846448281138
+ChattanoogaTN NashvilleTN ChattanoogaTN_tofrom_NashvilleTN 134.0 1084.3 236.9099078956448
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 1150.3 249.56545084346953
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 1267.3 266.7420354335184
+LouisvilleKY LexingtonKY Louisville_tofrom_Lexington 79.0 1346.3 393.1980516853058
+LexingtonKY CincinnatiOH Cincinnati_tofrom_Lexington 83.0 1429.3 391.49287203957783
+CincinnatiOH IndianapolisIN Cincinnati_tofrom_Indianapolis 112.0 1541.3 258.01936802040194
+IndianapolisIN TerreHauteIN Indianapolis_tofrom_TerreHaute 77.0 1618.3 192.50357871420258
+TerreHauteIN StLouisMO StLouis_tofrom_TerreHaute 170.0 1788.3 0.0
+0:00:00.156803
+
+Solution #6 : MiamiFL 690
+MiamiFL FortMyersFL Miami_tofrom_FortMyers_on_I75N 157.0 157.0 574.6533888168691
+FortMyersFL TampaFL FortMyers_tofrom_Tampa_on_I75N 127.0 284.0 534.6478650070464
+TampaFL GainesvilleFL Tampa_tofrom_Gainesville_on_I75N 130.0 414.0 543.5391738002928
+GainesvilleFL TallahasseeFL Gainesville_tofrom_Tallahassee_on_I75N 150.0 564.0 410.4146681714538
+TallahasseeFL MaconGA Tallahassee_tofrom_Macon_on_I75N 185.0 749.0 453.19309987752024
+MaconGA AtlantaGA Macon_tofrom_Atlanta_on_I75N 83.3 832.3 401.31872946028267
+AtlantaGA ChattanoogaTN Chattanooga_tofrom_Atlanta_on_I75S 118.0 950.3 337.5846448281138
+ChattanoogaTN OakRidgeTN ChattanoogaTN_tofrom_OakRidgeTN 101.0 1051.3 409.41050402483484
+OakRidgeTN AlbanyKY OakRidgeTN_tofrom_AlbanyKY 85.0 1136.3 503.2176187887353
+AlbanyKY NashvilleTN NashvilleTN_tofrom_AlbanyKY 131.0 1267.3 236.9099078956448
+NashvilleTN BowlingGreenKY Nashville_tofrom_BowlingGreen_on_I65 66.0 1333.3 249.56545084346953
+BowlingGreenKY LouisvilleKY Louisville_tofrom_BowlingGreen_on_I65 117.0 1450.3 266.7420354335184
+LouisvilleKY IndianapolisIN Indianapolis_tofrom_Louisville 114.0 1564.3 258.01936802040194
+IndianapolisIN TerreHauteIN Indianapolis_tofrom_TerreHaute 77.0 1641.3 192.50357871420258
+TerreHauteIN StLouisMO StLouis_tofrom_TerreHaute 170.0 1811.3 0.0
+0:00:00.168875

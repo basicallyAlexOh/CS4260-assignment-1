@@ -1,10 +1,11 @@
 import copy
 
-from dataloader import *
-from graph import Graph
-from path import Path
+from utils.dataloader import *
+from structs.graph import Graph
+from structs.path import Path
+from utils.timer import Timer
+
 from queue import PriorityQueue
-from timer import Timer
 import sys
 
 class AStarSolver:
@@ -109,6 +110,7 @@ class AStarSolver:
                 continueSearch = self.__promptContinue()
                 if not continueSearch:
                     self.__printSummary()
+                    self.solNumber = 0
                     self.__printSummary(output=self.__resultFile)
                     break
                 self.__timer.resume()
@@ -122,13 +124,15 @@ class AStarSolver:
                     newf = curPath.weight + nextNode.h
                     self.__frontier.put((newf, newPath))
 
+        print("Search has terminated... ")
 
         if len(self.__solutions) == 0:
             print("no solutions found...")
 
         if continueSearch:
-            print("Search has terminated... Printing Results:")
+            print("Printing Results:")
             self.__printSummary()
+            self.solNumber = 0
             self.__printSummary(output=self.__resultFile)
 
 
