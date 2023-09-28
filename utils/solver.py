@@ -1,3 +1,8 @@
+"""
+solver.py
+Classes: AStarSolver
+Purpose: Defines how the solver should solve for paths from the start location to the end location.
+"""
 import copy
 
 from utils.dataloader import *
@@ -8,11 +13,16 @@ from utils.timer import Timer
 from queue import PriorityQueue
 import sys
 
+
 class AStarSolver:
 
     # static variable to keep track of solution number
     solNumber = 0
 
+
+
+    # __init__
+    # Constructor - instantiates an object of AStarSolver
     def __init__(self, locFilePath: str, edgeFilePath: str, startLoc: str, goal: str, resultFilePath: str):
         dataloader = Dataloader(locFilePath, edgeFilePath)
         self.__graph = Graph(dataloader, goal=goal)
@@ -30,6 +40,10 @@ class AStarSolver:
         self.__resultFile = open(resultFilePath, "w+")
 
 
+
+    # solutionSummary (Private)
+    # Finds the min, max, and average cost of solutions
+    # Return: (min, max, avg)
     def __solutionSummary(self):
         totalSum = 0
         minCost = self.__solutions[0].weight
@@ -41,6 +55,10 @@ class AStarSolver:
         avgCost = totalSum / len(self.__solutions)
         return minCost, maxCost, avgCost
 
+
+    # findMinSolution (Private)
+    # Finds the ID of the minimum solution
+    # Returns: int
     def __findMinSolution(self):
         minCost = self.__solutions[0].weight
         id = 0
@@ -50,7 +68,9 @@ class AStarSolver:
                 id = i
         return id
 
-
+    # visitedNodes (Private)
+    # Lists the nodes that have been visited separated by one character of whitespace
+    # Returns: string
     def __visitedNodes(self):
         ret = ""
         for node in self.__discovered:
@@ -58,6 +78,10 @@ class AStarSolver:
                 ret += node.id + " "
         return ret
 
+
+    # printSummary (Private)
+    # Prints the summary to output
+    # Params: output (default = sys.stdout)
     def __printSummary(self, output=sys.stdout):
         print("Size of Frontier: " + str(self.__frontier.qsize()), file=output)
         (minCost, maxCost, avgCost) = self.__solutionSummary()
@@ -70,6 +94,10 @@ class AStarSolver:
             self.__pathSummary(p=path, output=output)
             print(str(path.time), file=output)
 
+
+    # pathSummary (Private)
+    # Outputs the summary of a single path
+    # Params: output (default = sys.stdout)
     def __pathSummary(self, p : Path, output=sys.stdout):
         print("Solution #%d : %s %d" % (self.solNumber, str(p.path[0]), p.path[0].h),file=output)
         self.solNumber += 1
@@ -79,6 +107,9 @@ class AStarSolver:
             print(str(edge) + " " + str(curG) + " " + str(edge.end.h), file=output)
 
 
+    # promptContinue (Private)
+    # Asks user for a response to continue the search or not
+    # Returns: bool
     def __promptContinue(self):
         response = input("Would you like to continue? [yes/no]")
         if response.lower() == "yes":
@@ -88,6 +119,10 @@ class AStarSolver:
         print("Invalid response... please try again\n")
         return self.__promptContinue()
 
+
+    # solve (Public)
+    # Solves the graph using anytime A* and gives unique paths to the ending location
+    # Returns: list of paths
     def solve(self):
         continueSearch = True
 

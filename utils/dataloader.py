@@ -1,10 +1,17 @@
-# Dataloader class
-
+"""
+dataloader.py
+Classes: Dataloader
+Purpose: Provides the utilities needed to load data into nodes and edges from CSV files.
+"""
 import csv
 from structs.node import Node
 from structs.edge import Edge
 
 class Dataloader:
+
+    # __init__
+    # Constructor - instantiates an object of Dataloader given the path to the file.
+    # Params: locFile (string), edgeFile (string)
     def __init__(self, locFile: str, edgeFile: str):
         try:
             self.__locFile = open(locFile, 'r')
@@ -18,6 +25,11 @@ class Dataloader:
 
         self.__readCSV()
 
+
+    # readCSV (Private)
+    # Reads the CSV files and constructs the node list and the edge list.
+    # Will print out invalid locations and edges.
+    # NOTE: will output on invalid lines of the input.
     def __readCSV(self):
         with self.__locFile as locCSV:
             reader = csv.reader(locCSV, delimiter=',')
@@ -28,7 +40,7 @@ class Dataloader:
                     self.nodeList.append(Node(row[0], lat, lon))
                     self.nodeDict.update({row[0]: Node(row[0], lat, lon)})
                 except:
-                    print("Not a valid location")
+                    print("Not a valid location: " + row[0])
 
         with self.__edgeFile as edgeCSV:
             reader = csv.reader(edgeCSV, delimiter=',')

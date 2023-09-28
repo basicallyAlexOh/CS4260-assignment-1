@@ -1,8 +1,11 @@
-from datetime import datetime
-import time
 """
+timer.py
+Classes: Timer
 Taken from https://stackoverflow.com/questions/60026296/how-to-make-a-pausable-timer-in-python
 """
+from datetime import datetime
+import time
+
 
 class Timer:
     """

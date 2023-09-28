@@ -1,4 +1,11 @@
+"""
+edge.py
+Classes: Edge
+Purpose: Defines a directed edge in the graph.
+"""
+
 from structs.node import Node
+
 class Edge:
     def __init__(self, label: str, start: Node, end: Node, weight: int):
         self.start = start
