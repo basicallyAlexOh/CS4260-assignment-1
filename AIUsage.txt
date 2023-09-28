@@ -1,0 +1,9 @@
+Use of AI in this project:
+
+I worked on this project individually and used AI very minimally. I pretty much designed and implemented
+all the code that was written for this assignment. I found that trying to engineer prompts to ChatGPT would
+take longer than me just simply implmenting it on my own. Also, I find that AI tools are very useful for small
+subtasks, however fail at generating larger program structure.
+
+Overall, my use of AI was quite minimal, and I used more traditional mediums such as StackOverflow and traditional
+code writing practices. 
